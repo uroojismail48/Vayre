@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/pp-pangaia');
+body{
+  background-color: black;
+  color : white;
+}
+.h1{
+   font-family: "Instrument Serif", serif;
+  font-weight: 200;
+
+    font-style: normal;
+
+}
+.p{
+  font-family: "Bitter", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.c{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.v{
+  font-family:cursive;
+
+  font-style: italic;
+}
+.h{
+font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+.pp{
+    font-family: "Instrument Serif", serif;
+       font-style: italic ;
+       font-weight: 400;
+}
