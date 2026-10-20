@@ -1,8 +1,21 @@
+import { motion } from "motion/react";
+
 
 function Navbar() {
   return (
-    <div className={`w-full  flex justify-center fixed top-0 z-50  h-20 items-center left-0 `}>
-      <div className="px-10 max-md:px-1 w-full flex justify-between items-center">
+    <div
+      className={`w-full  flex justify-center fixed top-0 z-50  h-20 items-center left-0 `}
+    >
+      <motion.div
+        initial={{ opacity: 0, filter: "blur(10px)", y: -50 }}
+        transition={{
+          duration:1,
+
+          ease: "easeOut",
+        }}
+        animate={{ opacity: 1, filter: "blur(0px)" , y: 0 }}
+        className="px-10 max-md:px-1 w-full flex justify-between items-center"
+      >
         <div className="">
           <button className="border max-md:px-1 max-md:text-sm  rounded-2xl px-5 py-1 font-mono font-medium text-xl">
             <h1 className="p">PRE-ORDER</h1>
@@ -17,7 +30,7 @@ function Navbar() {
             <b>+</b>
           </button>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
