@@ -1,9 +1,40 @@
 import { motion } from "motion/react";
-import Vid from "../assets/imgs/nagara_about.mp4"
-import Watch2 from "../assets/imgs/watch4.png"
-
+import Vid from "../assets/imgs/nagara_about.mp4";
+import Watch2 from "../assets/imgs/watch4.png";
 
 function Timeless() {
+  const words = [
+    "Vayre Timepieces embodies",
+    "a unique blend of craftsmanship ",
+    "and heritage, bringing timeless" , "to each meticulously crafted watch."
+  ];
+  const container = {
+    hide: {},
+    show: {
+      transition: {
+        staggerChildren: 1,
+      },
+    },
+  };
+  const items = {
+    hide: {
+      opacity: 0,
+      y: 60,
+
+      filter: "blur(10px)",
+    },
+    show: {
+      opacity: 1,
+      filter: "blur(0px)",
+      y: 0,
+
+      transition: {
+        duration: 1.2,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
     <div className="h-screen w-full  flex">
       <div className=" w-full h-full ">
@@ -41,11 +72,24 @@ function Timeless() {
             <span className="h1 text-8xl">ARTISTRY</span>
           </h1>
         </motion.div>
-        <div className=" flex justify-center items-center  w-[50%] flex-col  h-[45%] font-mono text-lg">
-          Nagara Timepieces embodies a unique blend of craftsmanship and
-          heritage, bringing timeless elegance to each meticulously crafted
-          watch.
-        </div>
+        <motion.div
+           initial="hide"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.3 }}
+          variant={container}
+          className=" flex justify-center items-center  w-[50%] flex-col  h-[45%] font-mono text-lg"
+        >
+          {words.map((word, index) => (
+            <motion.p
+              key={index}
+              variants={items}
+              className="p text-lg max-md:text-sm"
+            >
+              {word}
+            </motion.p>
+          ))}
+
+        </motion.div>
         <div className="w-20 h-39 ">
           <div className="h1 w-30 h-39 flex justify-center align-center gap-10">
             <span>EST.</span>
@@ -58,4 +102,4 @@ function Timeless() {
   );
 }
 
-export default Timeless
+export default Timeless;

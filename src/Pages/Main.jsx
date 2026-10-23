@@ -17,7 +17,7 @@ function Main() {
       y: 50
     },
     show: {
-      opacity: 1,
+              opacity: 1,
       filter: "blur(0px)",
       y: 0,
       transition: {
