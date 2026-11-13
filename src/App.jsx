@@ -15,14 +15,16 @@ function App() {
         smoothWheel: true,
       }}
     >
-      <div className="w-full h-screen ">
+      <div className="w-full  ">
         <Navbar />
         <Main />
 
         <Timeless />
         <Another />
-        <AnotherT />
-        <Watches />
+        <main className="relative">
+          <AnotherT />
+          <Watches />
+        </main>
       </div>
     </ReactLenis>
   );

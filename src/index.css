@@ -12,6 +12,9 @@ body{
   background-color: black;
   color : white;
 }
+html, body {
+ overflow-x: clip;
+}
 .h1{
    font-family: "Instrument Serif", serif;
   font-weight: 200;
