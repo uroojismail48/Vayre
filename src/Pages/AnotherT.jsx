@@ -8,7 +8,7 @@ const spring = { type: "spring", stiffness: 400, damping: 10 };
 
 function AnotherT() {
   return (
-    <div className="pp w-full relative h-screen flex flex-col justify-center items-center">
+    <div className="pp sticky top-0 z-0  w-full  h-screen flex flex-col justify-center items-center">
       <h1 className="absolute z-20 flex flex-col leading-[0.6] justify-center text-[210px] items-center">
         {["Crafted", "Through", "Generations"].map((word) => (
           <motion.span
@@ -26,13 +26,13 @@ function AnotherT() {
         <div className="relative z-10 w-full h-full flex flex-col justify-around items-end pb-[5%]  ">
           <div className="w-full h-full">
             <motion.div
-              whileHover={{ x: -10 }}
+              whileHover={{ x: 15 }}
               transition={spring}
-              className="w-[70%] h-[40%] "
+              className="w-[50%] h-[30%] "
             >
               <img
                 src={Image18}
-                alt="Watch 1"
+                alt="Watch 18"
                 className="w-full h-full object-contain"
               />
             </motion.div>
