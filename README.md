@@ -52,7 +52,3 @@ The project is deployed on Vercel. Every push to `main` triggers a new build.
 ## Author
 
 Made by [@uroojismail48](https://github.com/uroojismail48)
-
-## License
-
-<!-- EDIT: add a license (e.g. MIT) and a LICENSE file. -->
