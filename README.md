@@ -1,16 +1,58 @@
-# React + Vite
+# Vayre
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Live demo:** [vayre.vercel.app](https://vayre.vercel.app)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+<!-- EDIT: 2-3 lines about what the project is, who it is for, and what makes it different. -->
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Vayre is a front-end web project built with React and Vite, styled with Tailwind CSS and deployed on Vercel.
 
-## Expanding the Oxlint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+<!-- EDIT: replace with the real features of your site. -->
+
+- Fast, lightweight single-page app powered by Vite
+- Responsive layout styled with Tailwind CSS
+- Smooth animations using Motion
+- Deployed with continuous deployment on Vercel
+
+## Tech Stack
+
+| Area        | Tools                    |
+| ----------- | ------------------------ |
+| Framework   | React                    |
+| Build tool  | Vite                     |
+| Styling     | Tailwind CSS, PostCSS    |
+| Animation   | Motion                   |
+| Linting     | Oxlint                   |
+| Hosting     | Vercel                   |
+
+
+## Project Structure
+
+```
+Vayre/
+├── public/              # Static assets (favicon, images)
+├── src/                 # Application source code
+├── index.html           # HTML entry point
+├── vite.config.js       # Vite configuration
+├── tailwind.config.js   # Tailwind configuration
+├── postcss.config.js    # PostCSS configuration
+├── .oxlintrc.json       # Oxlint rules
+└── package.json
+```
+
+## Deployment
+
+The project is deployed on Vercel. Every push to `main` triggers a new build.
+
+## Author
+
+Made by [@uroojismail48](https://github.com/uroojismail48)
+
+## License
+
+<!-- EDIT: add a license (e.g. MIT) and a LICENSE file. -->
